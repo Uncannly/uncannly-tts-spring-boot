@@ -3,7 +3,7 @@
 class PtsController {
 
   @RequestMapping(method=RequestMethod.GET)
-  @ResponseBody String pts() {
-    return "Hello pts"
+  @ResponseBody pts(@RequestParam("word") word) {
+      return "Hello pts ${word}"
   }
 }
